@@ -23,7 +23,7 @@ function Header() {
             Password Generator
             </NavLink>
             <NavLink to="/currency" className="nav-link">
-            currency Convertor
+            Currency Convertor
             </NavLink>
             <NavLink to="/todo" className="nav-link">
             Todo
