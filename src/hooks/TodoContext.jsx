@@ -36,7 +36,9 @@ export function TodoContext({ children }) {
   };
   useEffect(() => {
     const localData = JSON.parse(localStorage.getItem("todos"));
-    setTodos(localData);
+    if(localData){
+      setTodos(localData);
+    }
   }, []);
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
