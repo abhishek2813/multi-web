@@ -28,6 +28,9 @@ function Header() {
             <NavLink to="/todo" className="nav-link">
             Todo
             </NavLink>
+            <NavLink to="/github" className="nav-link">
+            Github User
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

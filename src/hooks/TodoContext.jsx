@@ -34,15 +34,18 @@ export function TodoContext({ children }) {
     });
     setTodos(newArr);
   };
+
   useEffect(() => {
     const localData = JSON.parse(localStorage.getItem("todos"));
     if(localData){
       setTodos(localData);
     }
   }, []);
+
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
+  
   return (
     <TodoData.Provider
       value={{ todos, addTodo, completeTodo, updateTodo, deleteTodo }}
